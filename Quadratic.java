@@ -1,3 +1,4 @@
+// WAJP to solve quadratic equations
 import java.util.Scanner;
 public class Quadratic {
 	public static void main(String[] Strings)   
