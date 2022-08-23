@@ -6,14 +6,14 @@ public class Greatest {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		Scanner sc = new Scanner(System.in);
-		System.out.println("Input the 1st integer: "); // asking to give 1st number from user
-		int a = sc.nextInt();
+		System.out.println("Input the 1st number: "); // asking to give 1st number from user
+		Double a = sc.nextDouble();
 		Scanner tc = new Scanner(System.in);
-		System.out.println("Input the 2nd integer: "); // asking to give 2nd number from user
-		int b = tc.nextInt();
+		System.out.println("Input the 2nd number: "); // asking to give 2nd number from user
+		Double b = tc.nextDouble();
 		Scanner uc = new Scanner(System.in);
-		System.out.println("Input the 3rd integer: "); // asking to give 3rd number from user
-		int c = uc.nextInt();
+		System.out.println("Input the 3rd number: "); // asking to give 3rd number from user
+		Double c = uc.nextDouble();
 		System.out.println("So the given numbers are : " + a + "," + b + ","+ c);
 		if (a>b && a>c) {
 			System.out.println("The greatest number is : " + a ); // checking and printing if 1st input is greatest
