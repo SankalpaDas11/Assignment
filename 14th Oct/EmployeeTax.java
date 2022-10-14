@@ -4,10 +4,10 @@
   The class should have an instance float variable named “basicSalary” and a boolean variable 
   named “citizenship”.*/
 
-package com.cognizant.tax;                                                                      //Given package 
-class TaxCalculator {																			//1st class to build given methods
+package com.cognizant.tax;                                                                     	 //Given package 
+class TaxCalculator {										 //1st class to build given methods
 	
-	float basicSalary;																			//instance variables initializations 
+	float basicSalary;									 //instance variables initializations 
 	boolean citizenship;
 	float tax;
 	int nettSalary;
@@ -20,8 +20,8 @@ class TaxCalculator {																			//1st class to build given methods
   This method will display the following message in the console.
   “The Tax of the employee  for  the   <basic Salary> is <tax>”*/
 
-	void calculateTax() {																		//1st method to calculate tax
-		tax = (30*basicSalary)/100;																//logic
+	void calculateTax() {									//1st method to calculate tax
+		tax = (30*basicSalary)/100;							//logic
 		System.out.println("The Tax of the employee for the " + basicSalary + " is: " + tax);}	//printing output
 	
 /*Problem Statement 3: 
@@ -31,9 +31,9 @@ class TaxCalculator {																			//1st class to build given methods
   his method will also display the following message in the console.
   “The nett salary of the employee” <nettSalary>*/
 
-	void deductTax() {																			//2nd method to calculated reduced salary
-		int nettSalary = (int) (basicSalary-tax);												//logic
-		System.out.println("The nett salary of the employee : " + nettSalary);}					//printing output	
+	void deductTax() {									//2nd method to calculated reduced salary
+		int nettSalary = (int) (basicSalary-tax);					//logic
+		System.out.println("The nett salary of the employee : " + nettSalary);}		//printing output	
 	
 /*Problem Statement 4: Usage of relational operator
 	In the TaxCalculator class  create a method named  validateSalary() 
@@ -44,14 +44,14 @@ class TaxCalculator {																			//1st class to build given methods
 	 if basic salary > 1 lakh and citizenship is true.
 	The value would be printed as false for other conditions.*/
 
-	void validateSalary() {																		//3rd method to check citizenship eligibility
+	void validateSalary() {									//3rd method to check citizenship eligibility
 		String response;
-		if(basicSalary>100000 && citizenship==true) {											//checking if eligibility true
+		if(basicSalary>100000 && citizenship==true) {					//checking if eligibility true
 			response="true";
-		}else {																					//else false
+		}else {										//else false
 			response="false";
 		}
-		System.out.println("The salary and citizenship eligibity : " + response);				//printing output
+		System.out.println("The salary and citizenship eligibity : " + response);	//printing output
 	}}
 
 /*Problem Statement 5: 
@@ -59,20 +59,20 @@ class TaxCalculator {																			//1st class to build given methods
   add a main method which sets the values and invoke the following methods in 
   the TaxCalculator object.*/
 
-public class EmployeeTax {																		//2nd class with main method
+public class EmployeeTax {									//2nd class with main method
 
-	public static void main(String[] args) {													//main method to call the previous methods
+	public static void main(String[] args) {						//main method to call the previous methods
 		// TODO Auto-generated method stub
-		TaxCalculator salary = new TaxCalculator();												//creating object of 1st class
+		TaxCalculator salary = new TaxCalculator();					//creating object of 1st class
 		
 	/*Test Case 1:  Specify the following values and run the main method
 		1.	Set  the value of citizenship as true, basicSalary as 25000.
 		2.	Invoke the methods calculateTax(), deductTax(), validateTax().*/
 
 		System.out.println("1st output: ");
-		salary.basicSalary=25000f;																//initializing values for instance variable
+		salary.basicSalary=25000f;							//initializing values for instance variable
 		salary.citizenship=true;																
-		salary.calculateTax();																	//calling previous class methods
+		salary.calculateTax();								//calling previous class methods
 		salary.deductTax();
 		salary.validateSalary();
 		System.out.println();
@@ -82,9 +82,9 @@ public class EmployeeTax {																		//2nd class with main method
 		2.	Invoke the methods calculateTax(), deductTax(), validateTax().*/
 
 		System.out.println("2nd output: ");														
-		salary.basicSalary=125000f;																//initializing 2nd set of values for instance variable
+		salary.basicSalary=125000f;							//initializing 2nd set of values for instance variable
 		salary.citizenship=true;							
-		salary.calculateTax();																	//calling methods for 2nd set of values
+		salary.calculateTax();								//calling methods for 2nd set of values
 		salary.deductTax();
 		salary.validateSalary();
 	}
