@@ -22,7 +22,8 @@ class TaxCalculator {										 //1st class to build given methods
 
 	void calculateTax() {									//1st method to calculate tax
 		tax = (30*basicSalary)/100;							//logic
-		System.out.println("The Tax of the employee for the " + basicSalary + " is: " + tax);}	//printing output
+		System.out.println("The Tax of the employee for the " + 
+				   basicSalary + " is: " + tax);}				//printing output
 	
 /*Problem Statement 3: 
   In the TaxCalculator class  create a method named  deductTax() method 
